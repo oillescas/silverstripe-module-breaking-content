@@ -5,7 +5,7 @@ class BreakingContent extends DataObjectDecorator
                 return array(
                         'db' => array(
                 				'BreakingContentEnable' => 'Boolean',
-                                'BreakingContentTexto' => 'HTMLVarchar'
+                                'BreakingContentTexto' => 'HTMLText'
                         )
                 );
         }

@@ -1,0 +1,17 @@
+IMPORTANTE ANTES DE SUBIR CUALQUIER ARCHIVO AL SERVIDOR 
+HAY QUE LOGARSE COMO ADMINISTRADOR
+
+
+
+La instalación consta de dos partes 
+	· La primera parta consiste en instalar el modulo BreakingContent
+	para esto solo hay que subir la carpeta "BreakingContent" a la raiz 
+	del sitio web.
+	y hacer una llamada a http://{host}/dev/build
+	
+	· La segunda parte consiste en hacer el el theme añada el html necesarío 
+	para esto hay que añadir el archivo breakingContent.ss que esta en la carpeta
+	theme a la carpeta Includes de el Theme que estemos usando 
+	/themes/{nombreDelTheme}/templates/Includes
+	Y ademas en el page.ss del theme hay que añadie el siguiente codigo
+	<% include BreakingContent %> justo antes de la etiqueta </body>
